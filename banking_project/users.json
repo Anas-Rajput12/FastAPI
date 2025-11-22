@@ -1,0 +1,5 @@
+{
+  "anas": { "pin": 1111, "balance": 10000 },
+  "ahmed": { "pin": 2222, "balance": 5000 },
+  "ali":   { "pin": 3333, "balance": 2000 }
+}
