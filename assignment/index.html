@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canva | A new era of imagination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Canva</div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="signup-btn">Sign up</a>
+                <a href="#" class="login-btn">Log in</a>
+            </div>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Plans</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Help</a></li>
+            <li class="mobile-auth"><a href="#" class="signup-btn">Sign up</a></li>
+            <li class="mobile-auth"><a href="#" class="login-btn">Log in</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>A new era of imagination</h1>
+                <p>The world’s only all-in-one visual communication platform, Canva is on a mission to empower the world to design. With our continued investment in the enterprise, we’re bringing the power of visual communication to every kind of organization.</p>
+                <div class="hero-buttons">
+                    <a href="#" class="cta-primary">Start designing for free</a>
+                    <a href="#" class="cta-secondary">Explore our launches</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const mobileNav = document.querySelector('.mobile-nav');
+
+            hamburgerMenu.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+                hamburgerMenu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
